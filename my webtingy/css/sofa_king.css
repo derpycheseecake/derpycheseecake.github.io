@@ -1,0 +1,154 @@
+ body{
+     background-color: rgb(65, 255, 162);
+	 
+	 font-family: cursive;
+}
+
+@keyframes animate {
+    /*
+	from{
+		background-color:rgb(65, 255, 162);
+    }
+	
+	to{
+		background-color: hotpink;
+	}*/
+	
+	0% {
+		background-color: hotpink;
+		padding: 0px;
+		font-size: 15px;
+		transform: rotate(0deg);
+	}
+	
+	50%{
+		background-color: limegreen;
+		padding: 0px;
+		font-size: 50px;
+		transform: rotate(180deg);
+	}
+	
+	100% {
+		background-color: rgb(65, 255, 162);
+		padding: 0px;
+		font-size: 15px;
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes imageanimbefor{
+	
+	from{
+		font-size: 1em;
+	}
+	
+	to{
+		font-size: 2em;
+	}
+}
+	
+
+@keyframes linkanimbefore{
+	from {
+		font-size: 2em;
+	}
+	
+	to{
+		font-size: 1em;
+	}
+}
+
+ 	
+h1{
+	background-color: rainbow;
+	color: brown;
+	font-size: 100px;
+	
+	font-family: cursive;
+	
+	animation-name: animate;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+	animation-delay: 3s;
+	
+}
+
+img{
+	background-color: rgb(65, 255, 162);
+	width: 400px;
+	padding-left: 10px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	padding-right: 40px;
+	
+	border: 5px solid red;
+	
+	animation-name: imageanim;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+	animation-delay: 3s;
+}
+
+h1:hover {
+	color: hotpink;
+	background-color: hotpink;
+	border: hotpink;
+	font-size: 4em;
+	padding: 5px;
+}
+
+a{ 
+	text-decoration: none;
+	font-size: 1em;
+	
+	animation-name: linkanimbefore;
+	animation-duration: 0.1s;
+	animation-iteration-count: 1;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: red;
+	background-color:yellow;
+	font-size: 2em;
+	
+	animation-name: linkanimbefore;
+	animation-duration: 0.1s;
+	animation-iteration-count: 1;
+}
+
+iframe{
+	width: 90%;
+	height: 500px;
+	
+}
+
+
+@media (max-width: 500px){
+	
+	h1{
+		padding: 10px;
+		font-size: 1.5em;
+		background-color: blue;
+		border: 2px solid red;
+	}
+	
+	h1:hover{
+		font-size: 2em;
+		border: 2px dotted hotpink;
+	}
+	
+	img{
+	    width: 70%;
+		height: 40%;
+		margin: 1em;
+		padding: 1em;
+		border: 1px insert red;
+	}
+	
+	iframe{
+
+}
+
